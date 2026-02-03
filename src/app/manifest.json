@@ -1,0 +1,53 @@
+{
+	"name": "TubeBrief",
+	"short_name": "TubeBrief",
+	"icons": [
+		{
+			"src": "/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#B83C2E",
+	"background_color": "#f8f8f8",
+	"display": "standalone",
+	"start_url": "/",
+	"scope": "/",
+	"orientation": "portrait",
+	"lang": "en",
+	"dir": "ltr",
+	"description": "Summarize Youtube Videos Instantly",
+	"screenshots": [
+		{
+			"src": "/screenshots/details.png",
+			"sizes": "1280x720",
+			"type": "image/png",
+			"form_factor": "narrow"
+		},
+		{
+			"src": "/screenshots/recent.png",
+			"sizes": "1280x720",
+			"type": "image/png",
+			"form_factor": "narrow"
+		}
+	],
+	"shortcuts": [
+		{
+			"name": "Open TubeBrief",
+			"short_name": "Summarizer",
+			"description": "Open the tube-brief app",
+			"url": "/",
+			"icons": [
+				{
+					"src": "/android-chrome-192x192.png",
+					"sizes": "192x192"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,15 @@
+# Ignore dependencies
+node_modules
+dist
+build
+coverage
+
+# Ignore build outputs and locks
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore distinct large files
+*.min.js
+*.min.css
+*.map

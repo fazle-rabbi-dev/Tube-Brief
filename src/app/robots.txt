@@ -1,0 +1,9 @@
+# -------------- Allow all crawlers  -------------- 
+User-agent: *
+Allow: /
+
+#  -------------- Disallow  -------------- 
+Disallow: /dashboard
+Disallow: /api/
+
+Sitemap: https://tube-brief.vercel.app/sitemap.xml
