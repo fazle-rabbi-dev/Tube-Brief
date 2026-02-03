@@ -7,17 +7,17 @@ const Logo = ({ variant }: { variant?: string }) => {
 			<span
 				className={cn(
 					"w-7 h-7 rounded-lg bg-primary flex items-center justify-center group-hover:scale-110 transition-transform",
-					variant === "footer" && "size-20 bg-black"
+					variant === "footer" && "size-20 bg-black",
 				)}>
 				<Play
 					className={cn(
 						"w-5 h-5 text-primary-foreground fill-current",
-						variant === "footer" && " text-white size-10"
+						variant === "footer" && " text-white size-10",
 					)}
 				/>
 			</span>
 			<span
-				className={cn("text-base font-bold text-foreground", variant === "footer" && "hidden")}>
+				className={cn("text-lg font-bold text-foreground", variant === "footer" && "hidden")}>
 				TubeBrief
 			</span>
 		</div>

@@ -28,14 +28,13 @@ const SettingsContent = () => {
 		gemini: "",
 	});
 
-
 	useEffect(() => {
 		setSavedKeys({
 			rapid: Localstorage.rapidApiKey || "",
 			gemini: Localstorage.geminiApiKey || "",
 		});
 
-		setSummaryLanguage(Localstorage.summaryLanguage as string)
+		setSummaryLanguage(Localstorage.summaryLanguage as string);
 	}, []);
 
 	// ============= Form Manager =============
@@ -64,7 +63,7 @@ const SettingsContent = () => {
 	};
 
 	const handleLanguageSave = (e: React.FormEvent<HTMLFormElement>) => {
-		e.preventDefault()
+		e.preventDefault();
 
 		const isValidLang = isValidLanguage(summaryLanguage);
 
@@ -73,9 +72,8 @@ const SettingsContent = () => {
 			return toast.success("Saved successful.");
 		}
 
-		toast.error("Please input a correct language.")
+		toast.error("Please input a correct language.");
 	};
-
 
 	return (
 		<main className="container mt-0">
@@ -84,7 +82,9 @@ const SettingsContent = () => {
 				<p>
 					<i>Default language is english</i>
 				</p>
-				<form onSubmit={handleLanguageSave} className="mt-3">
+				<form
+					onSubmit={handleLanguageSave}
+					className="mt-3">
 					<Input
 						type="text"
 						placeholder="e.g: english/bangla/hindi/urdhu"
@@ -107,15 +107,11 @@ const SettingsContent = () => {
 					<CardContent className="space-y-4">
 						<div className="mt-6">
 							<p className="mb-1">🚀 Rapid API Key</p>
-							<code className="">
-								{savedKeys.rapid.length > 0 ? savedKeys.rapid : <Spinner />}
-							</code>
+							<code className="">{savedKeys.rapid}</code>
 						</div>
 						<div className="">
 							<p className="mb-1">✨ Gemini API Key</p>
-							<code className="">
-								{savedKeys.gemini.length > 0 ? savedKeys.gemini : <Spinner />}
-							</code>
+							<code className="">{savedKeys.gemini}</code>
 						</div>
 					</CardContent>
 				</Card>

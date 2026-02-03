@@ -15,7 +15,7 @@ The goal is simple: consume valuable video content in less time, with less cogni
 ## Live Demo 🎉
 
 - Explore the live version of **TubeBrief**:
-   - _link goes here_
+   - https://tube-brief.vercel.app/
 
 ## Project Created At
 
@@ -110,7 +110,7 @@ cd tube-brief
 npm install
 
 # rename the sample environment file
-# .env.local.example -> .env.local
+# env.local.example -> .env.local
 # and fill in your own credentials
 
 # run the app locally
