@@ -6,7 +6,7 @@ import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-const VIDEO_URL = "https://www.youtube.com/embed/eJBQqzXmTeM?si=CrTe4VnbtCXsi5mf";
+const VIDEO_URL = "https://www.youtube.com/embed/EuvrYT9HrTk?si=NteyZPgXzwfRd0Bg";
 
 const HeroVideoDemo = () => {
 	const [showVideo, setShowVideo] = useState(false);
@@ -21,7 +21,7 @@ const HeroVideoDemo = () => {
 				<div
 					className={cn(
 						"flex flex-col gap-3 justify-center items-center",
-						showVideo && "hidden"
+						showVideo && "hidden",
 					)}>
 					<Button
 						onClick={() => setShowVideo(true)}
