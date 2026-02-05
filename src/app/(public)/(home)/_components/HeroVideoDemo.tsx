@@ -12,7 +12,9 @@ const HeroVideoDemo = () => {
 	const [showVideo, setShowVideo] = useState(false);
 
 	return (
-		<div className="mt-10 w-full aspect-video border bg-dark/50 backdrop-blur-md rounded-lg p-3">
+		<div
+			id="video-demo"
+			className="mt-10 w-full aspect-video border bg-dark/50 backdrop-blur-md rounded-lg p-3">
 			<div className="relative w-full h-full flex-center">
 				{/* Subtle gradient overlay */}
 				<div className="rounded-lg absolute -z-10 inset-0 bg-linear-to-br from-primary/10 to-transparent" />

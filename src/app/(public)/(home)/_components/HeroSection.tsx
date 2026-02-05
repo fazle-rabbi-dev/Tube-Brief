@@ -8,6 +8,7 @@ import HeroVideoDemo from "./HeroVideoDemo";
 import CursorEffect from "./CursorEffect";
 import Link from "next/link";
 import DashedGridTop from "./DashedGridTop";
+import { SignInButton } from "@clerk/nextjs";
 
 const HeroSection = () => {
 	return (
@@ -40,15 +41,23 @@ const HeroSection = () => {
 
 					{/* ============= CTA ============= */}
 					<div className="flex flex-col md:flex-row gap-4">
-						<Button animate="scale">
-							<Play />
-							<Link href="/sign-in">Start summarizing for free</Link>
+						<Button
+							asChild
+							animate="scale">
+							<div>
+								<Play />
+								<SignInButton mode="modal">Start summarizing for free</SignInButton>
+							</div>
 						</Button>
 						<Button
 							variant="outline"
 							animate="scale">
 							<Play />
-							Watch demo
+							<Link
+								target="_blank"
+								href="https://www.youtube.com/embed/EuvrYT9HrTk?si=NteyZPgXzwfRd0Bg">
+								Watch demo
+							</Link>
 						</Button>
 					</div>
 				</header>
