@@ -79,7 +79,7 @@ const SettingsContent = () => {
 	};
 
 	return (
-		<main className="container mt-0">
+		<main className="container mt-4">
 			<section className="">
 				<h2 className="heading-3">Summary Language</h2>
 				<p>

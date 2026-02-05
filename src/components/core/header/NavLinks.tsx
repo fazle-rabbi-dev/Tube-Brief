@@ -15,8 +15,9 @@ import {
 	Sparkles,
 	X,
 } from "lucide-react";
-import { SignInButton, SignedOut } from "@clerk/nextjs";
+import { SignInButton, SignOutButton, SignedIn, SignedOut } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
+import LogoutButton from "@/components/ui/logout-button";
 
 type PropsType = {
 	isSignedIn: Boolean;
@@ -73,6 +74,18 @@ const NavLinks = ({ isSignedIn, closeSidebar }: PropsType) => {
 						</Button>
 					</SignInButton>
 				</SignedOut>
+			</div>
+
+			<div className="lg:hidden">
+				<SignedIn>
+					<SignOutButton>
+						<Button
+							className="w-full"
+							variant="destructive">
+							Logout
+						</Button>
+					</SignOutButton>
+				</SignedIn>
 			</div>
 		</>
 	);
