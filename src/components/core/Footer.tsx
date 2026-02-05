@@ -22,12 +22,16 @@ const Footer = () => {
 
 					<ul className="flex-vr-center gap-3">
 						<li>
-							<Link href="#">
+							<Link
+								target="_blank"
+								href="https://github.com/fazle-rabbi-dev/Tube-Brief?tab=readme-ov-file">
 								<GithubIcon />
 							</Link>
 						</li>
 						<li>
-							<Link href="#">
+							<Link
+								target="_blank"
+								href="https://bd.linkedin.com/in/fazlerabbidev">
 								<LinkedinIcon />
 							</Link>
 						</li>
