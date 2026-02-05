@@ -14,8 +14,38 @@ The goal is simple: consume valuable video content in less time, with less cogni
 
 ## Live Demo 🎉
 
-- Explore the live version of **TubeBrief**:
+- Explore the live version of **TubeBrief** here:
    - https://tube-brief.vercel.app/
+
+---
+
+## 🧭 How to Use TubeBrief
+
+Follow the steps below to set up TubeBrief and start generating summaries.
+
+### 1️⃣ Get a YouTube Transcript API Key
+
+- Visit:  
+  👉 https://rapidapi.com/solid-api-solid-api-default/api/youtube-transcript3
+- Sign in to **RapidAPI**.
+- Subscribe to the API (**free plan includes 100 requests per month**).
+- Copy your **API key**.
+- Log in to **TubeBrief**, go to **Settings**, and paste the key there.
+
+### 2️⃣ Get a Gemini API Key
+
+- Visit **Google AI Studio**:  
+  👉 https://aistudio.google.com/api-keys
+- Create a new **API key**.
+- Copy the key.
+- Paste it into **TubeBrief → Settings**.
+
+> ✅ Setup Complete!
+> **Great job 👏**
+
+TubeBrief is now ready. You can start generating video summaries right away.
+
+---
 
 ## Project Created At
 
