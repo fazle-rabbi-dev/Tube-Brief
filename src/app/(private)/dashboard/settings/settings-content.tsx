@@ -11,6 +11,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { isValidLanguage, Localstorage } from "@/lib/utils";
 import { Spinner } from "@/components/ui/spinner";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { InfoIcon } from "lucide-react";
+import Link from "next/link";
 
 // ============= Schema =============
 const formSchema = z.object({
@@ -158,6 +161,21 @@ const SettingsContent = () => {
 					</Button>
 				</form>
 			</section>
+
+			<Alert className="mt-6">
+				<InfoIcon />
+				<AlertTitle>How to get API keys?</AlertTitle>
+				<AlertDescription className="flex gap-2 flex-wrap">
+					<span>Getting your API keys is simple. Follow the step-by-step guide here: </span>
+					<Link
+						className="underline text-secondary"
+						href="https://github.com/fazle-rabbi-dev/Tube-Brief"
+						target="_blank"
+						rel="noopener noreferrer">
+						GitHub
+					</Link>
+				</AlertDescription>
+			</Alert>
 		</main>
 	);
 };
