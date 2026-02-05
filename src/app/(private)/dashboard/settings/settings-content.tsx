@@ -110,9 +110,9 @@ const SettingsContent = () => {
 					<CardContent className="space-y-4">
 						<div className="mt-6">
 							<p className="mb-1">🚀 Rapid API Key</p>
-							<code className="">{savedKeys.rapid}</code>
+							<code className="break-all">{savedKeys.rapid}</code>
 						</div>
-						<div className="">
+						<div className="break-all">
 							<p className="mb-1">✨ Gemini API Key</p>
 							<code className="">{savedKeys.gemini}</code>
 						</div>
