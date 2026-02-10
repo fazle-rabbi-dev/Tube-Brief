@@ -40,6 +40,10 @@ export const metadata: Metadata = {
 		creator: "@fazle-rabbi-dev",
 		creatorId: "1467726470533754880",
 	},
+
+	verification: {
+		google: "bBOJ8YhTLw-vz1qayvGCHKw3GnTLPoQ4RWRodFvBqI4",
+	},
 };
 
 export const viewport: Viewport = {
